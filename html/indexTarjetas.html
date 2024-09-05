@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto 1</title>
+    <link rel="stylesheet" href="/Proyecto1/styles/reset.css">
+    <link rel="stylesheet" href="/Proyecto1/styles/indexTarjetas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Franco Fernandez</h1>
+        <h2>Mi primera página</h2>
+    </header>
+    
+    <section>
+        <h2>ACERCA DE MÍ</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem, minus corporis sed optio libero delectus odit dolore dolorem eligendi, magnam voluptatem aliquam officia exercitationem quis, expedita ipsa est! Ipsam.</p>
+    </section>
+    
+    <section>
+        <h2 id="tecno">Mis Tecnologías Favoritas</h2>    
+        <img src="/Proyecto1/assets/Logos.png" alt="Logos de tecnologías">       
+    </section>                
+    
+    <section>
+        <h2>Formulario</h2>
+        <form id="tarjetaForm">
+            <label for="titulo">TÍTULO</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="descripcion">DESCRIPCIÓN</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+            
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url" required>
+            
+            <button type="submit" id="boton">Generar</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Tarjetas</h2>
+        <div id="tarjetasContainer"></div>
+    </section>
+
+    <footer>
+        <h2>@Franco Fernandez - Derechos reservados</h2>
+    </footer>
+    
+    <script src="/Proyecto1/scripts/indexTrajetas.js"></script>
+</body>
+
+</html>
