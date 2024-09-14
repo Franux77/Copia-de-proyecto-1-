@@ -45,7 +45,7 @@ boton.addEventListener("click",(event)=>{
     parrafo.textContent = descripcion;
     img.src = url;
     ////////////////////////////////////////////////
-    tarjeta.classList.add("div")
+    tarjeta.classList.add("tarjeta")
 
     tarjeta.appendChild(title);
     tarjeta.appendChild(parrafo);
