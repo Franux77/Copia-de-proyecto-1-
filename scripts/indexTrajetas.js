@@ -28,27 +28,83 @@ class Repository{
         return "Tu actividad ha sido eliminada con exito"
     }
 }
+////////////////////////////////////////////////////////////////////////////////
 const boton=document.getElementById("boton");
+
+const repository= new Repository();
+
 boton.addEventListener("click",(event)=>{
     event.preventDefault();
 
     const nombre=document.getElementById("titulo").value;
     const descripcion=document.getElementById("descripcion").value;
     const url=document.getElementById("url").value;
-    const tarjetas=document.getElementById("tarjetasContainer");
-    
-    const title=document.createElement("h2");
-    const parrafo=document.createElement("p");
-    const img=document.createElement("img");
-    const tarjeta=document.createElement("div");
-    title.textContent = nombre;
-    parrafo.textContent = descripcion;
-    img.src = url;
-    ////////////////////////////////////////////////
-    tarjeta.classList.add("tarjeta")
 
-    tarjeta.appendChild(title);
-    tarjeta.appendChild(parrafo);
-    tarjeta.appendChild(img);
-    tarjetas.appendChild(tarjeta);
+    if (nombre==="" || descripcion==="" || url=== "") {
+        alert("No están completos los campos")
+        return;
+    };
+    repository.createActivity(nombre,descripcion,url);
+    
+    agregarAlContenedor();
+        
+    tarjetas.forEach(element => {
+        
+    });
+    
+    function agregarAlContenedor() {
+        const tarjetasContainer=document.getElementById("tarjetasContainer");
+        const tarjetas=repository.getAllActivities.map(({id,title,descripcion,url})=>{
+            
+            const div=document.createElement("div");
+                  const title=document.createElement("h2");
+              const parrafo=document.createElement("p");
+           const img=document.createElement("img");
+            
+        div.classList.add(div);
+        titulo.innerHTML=title;
+        imagen.src=imgUrl;
+        parrafo.innerHTML=descripcion;
+
+        div.appendChild(titulo);
+        div.appendChild(imagen);
+        div.appendChild(parrafo);
+
+            return div;
+        }
+        )
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // title.textContent = nombre;
+    // parrafo.textContent = descripcion;
+    // img.src = url;
+    // ////////////////////////////////////////////////
+    // tarjeta.classList.add("tarjeta")
+
+    // tarjeta.appendChild(title);
+    // tarjeta.appendChild(parrafo);
+    // tarjeta.appendChild(img);
+    // tarjetas.appendChild(tarjeta);
 })

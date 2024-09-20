@@ -34,7 +34,11 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+#Tar{
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
 form label {
     margin: 0.5rem 0 0.2rem;
 }
@@ -109,7 +113,7 @@ form button:hover {
 }
 
 .tarjeta img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
