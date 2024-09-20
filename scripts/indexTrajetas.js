@@ -129,7 +129,7 @@ boton.addEventListener("click", (event) => {
 
 function agregarAlContenedor() {
     const tarjetasContainer = document.getElementById("tarjetasContainer");
-    tarjetasContainer.innerHTML = ""; // Limpia el contenedor antes de agregar nuevas tarjetas
+    tarjetasContainer.innerHTML = "";
 
     const tarjetas = repository.getAllActivities().map(({ id, title, description, imgUrl }) => {
         const div = document.createElement("div");
