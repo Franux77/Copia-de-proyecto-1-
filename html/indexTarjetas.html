@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +13,42 @@
         <h1>Franco Fernandez</h1>
         <h2>Mi primera página</h2>
     </header>
-    
-    <section>
-        <h2>ACERCA DE MÍ</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem, minus corporis sed optio libero delectus odit dolore dolorem eligendi, magnam voluptatem aliquam officia exercitationem quis, expedita ipsa est! Ipsam.</p>
-    </section>
-    
-    <section>
-        <h2 id="tecno">Mis Tecnologías Favoritas</h2>    
-        <img src="/assets/Logos.png"Logos de tecnologías">       
-    </section>                
-    
-    <section>
-        <h2>Formulario</h2>
-        <form id="tarjetaForm">
-            <label for="titulo">TÍTULO</label>
-            <input type="text" id="titulo" name="titulo" placeholder="Ingrese su titulo aqui">
-            
-            <label for="descripcion">DESCRIPCIÓN</label>
-            <input type="text" id="descripcion" name="descripcion" placeholder="Ingrese la descripcion aqui">
-            
-            <label for="url">URL</label>
-            <input type="url" id="url" name="url" placeholder="">
-            
-            <button type="submit" id="boton">Generar</button>
-        </form>
-    </section>
-    
-    <section>
-        <h2 id="Tar">Tarjetas</h2>
-        <div id="tarjetasContainer"></div>
-    </section>
+
+    <main>
+        <section>
+            <h2>ACERCA DE MÍ</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem, minus corporis sed optio libero delectus odit dolore dolorem eligendi, magnam voluptatem aliquam officia exercitationem quis, expedita ipsa est! Ipsam.</p>
+        </section>
+
+        <section>
+            <h2 id="tecno">Mis Tecnologías Favoritas</h2>
+            <img src="/assets/Logos.png" alt="Logos de tecnologías">
+        </section>
+
+        <section>
+            <h2>Formulario</h2>
+            <form id="tarjetaForm">
+                <label for="titulo">TÍTULO</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ejemplo: Leo Messi" required>
+
+                <label for="descripcion">DESCRIPCIÓN</label>
+                <input type="text" id="descripcion" name="descripcion" placeholder="Ejemplo: Messi sonriendo" required>
+
+                <label for="url">URL</label>
+                <input type="url" id="url" name="url" placeholder="Ejemplo: www.ejemplo.com" required><button type=submit" id="boton">Generar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 id="Tar">Tarjetas</h2>
+            <div id="tarjetasContainer"></div>
+        </section>
+    </main>
 
     <footer>
         <h2>@Franco Fernandez - Derechos reservados</h2>
     </footer>
-    
+
     <script src="/scripts/indexTrajetas.js"></script>
 </body>
-
 </html>
